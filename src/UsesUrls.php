@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper;
+namespace Fastwhale\PHPScraper;
 
 use League\Uri\Http;
 use League\Uri\Uri;

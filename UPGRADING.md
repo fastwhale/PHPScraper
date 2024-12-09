@@ -4,18 +4,18 @@ This document will help you upgrading PHPScraper from an earlier version to late
 
 ## From `0.x` to `1.x`
 
-- The namespace has been adjusted from `\spekulatius` to `\Spekulatius\PHPScraper`. Any `use` statements or other class references need to updated accordingly:
+- The namespace has been adjusted from `\spekulatius` to `\Fastwhale\PHPScraper`. Any `use` statements or other class references need to updated accordingly:
 
   ```diff
   -use spekulatius\phpscraper;
-  +use Spekulatius\PHPScraper\PHPScraper;
+  +use Fastwhale\PHPScraper\PHPScraper;
   ```
 
   or
 
   ```diff
   -$web = new \spekulatius\phpscraper;
-  +$web = new \Spekulatius\PHPScraper\PHPScraper;
+  +$web = new \Fastwhale\PHPScraper\PHPScraper;
   ```
 
 ## From `1.x` to `2.x`

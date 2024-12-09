@@ -10,4 +10,4 @@ echo "\n";
 echo "# Here you can try out your code or examples from phpscraper.de\n";
 echo "\n";
 
-$web = new \Spekulatius\PHPScraper\PHPScraper;
+$web = new \Fastwhale\PHPScraper\PHPScraper;

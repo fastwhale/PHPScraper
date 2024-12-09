@@ -1,8 +1,8 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
-use Spekulatius\PHPScraper\DataTransferObjects\FeedEntry;
+use Fastwhale\PHPScraper\DataTransferObjects\FeedEntry;
 
 class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
 {
@@ -11,7 +11,7 @@ class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
      */
     public function testSearchIndexUrl()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page. As the URL is predefined, it's only about the base URL.
         $web->go('https://test-pages.phpscraper.de/meta/feeds.html');
@@ -30,7 +30,7 @@ class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefaultSearchIndexUrl()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page. As the URL is predefined, it's only about the base URL.
         $web->go('https://test-pages.phpscraper.de/meta/feeds.html');
@@ -51,7 +51,7 @@ class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
      */
     public function testCustomSearchIndexUrl()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page. As the URL is predefined, it's only about the base URL.
         $web->go('https://test-pages.phpscraper.de/meta/feeds.html');
@@ -70,7 +70,7 @@ class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
      */
     public function testDifferentSearchIndexUrlTypes()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page. As the URL is predefined, it's only about the base URL.
         $web->go('https://test-pages.phpscraper.de/meta/feeds.html');
@@ -95,7 +95,7 @@ class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
      */
     public function testSearchIndexRaw()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page. As the URL is predefined, it's only about the base URL.
         $web->go('https://test-pages.phpscraper.de/meta/feeds.html');
@@ -132,7 +132,7 @@ class FeedSearchIndexTest extends \PHPUnit\Framework\TestCase
      */
     public function testSearchIndex()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page. As the URL is predefined, it's only about the base URL.
         $web->go('https://test-pages.phpscraper.de/meta/feeds.html');

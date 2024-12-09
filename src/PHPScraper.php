@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper;
+namespace Fastwhale\PHPScraper;
 
 /**
  * This class manages the Clients and connections.

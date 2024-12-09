@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class MetaAuthorTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class MetaAuthorTest extends \PHPUnit\Framework\TestCase
      */
     public function testMissingAuthor()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/meta/missing.html');
@@ -23,7 +23,7 @@ class MetaAuthorTest extends \PHPUnit\Framework\TestCase
      */
     public function testWithHTMLEntity()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/html-entities.html');
@@ -40,7 +40,7 @@ class MetaAuthorTest extends \PHPUnit\Framework\TestCase
      */
     public function testLoremIpsum()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');
@@ -57,7 +57,7 @@ class MetaAuthorTest extends \PHPUnit\Framework\TestCase
      */
     public function testGermanUmlaute()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/german-umlaute.html');
@@ -74,7 +74,7 @@ class MetaAuthorTest extends \PHPUnit\Framework\TestCase
      */
     public function testChineseCharacters()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/chinese-characters.html');

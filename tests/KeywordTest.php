@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class KeywordTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class KeywordTest extends \PHPUnit\Framework\TestCase
      */
     public function testKeywordExtraction()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         // It contains 3 paragraphs from the English Wikipedia article for "lorem ipsum"
@@ -51,7 +51,7 @@ class KeywordTest extends \PHPUnit\Framework\TestCase
      */
     public function testKeywordExtractionWithScores()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         // It contains 3 paragraphs from the English Wikipedia article for "lorem ipsum"

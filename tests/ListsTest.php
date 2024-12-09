@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class ListsTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class ListsTest extends \PHPUnit\Framework\TestCase
      */
     public function checkCountTest()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         /**
          * Navigate to the test page. This page contains:

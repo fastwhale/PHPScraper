@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class OutlineTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class OutlineTest extends \PHPUnit\Framework\TestCase
      */
     public function outlineTest()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         /**
          * Navigate to the test page. This page contains:
@@ -60,7 +60,7 @@ class OutlineTest extends \PHPUnit\Framework\TestCase
      */
     public function outlineWithParagraphsTest()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         /**
          * Navigate to the test page. This page contains:

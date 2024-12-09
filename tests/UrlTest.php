@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 /**
  * Ensure our URL lib, https://github.com/thephpleague/uri, is integrated correctly and works as expected.
@@ -14,7 +14,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      */
     public function testNullPassingThrough()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         $this->assertNull($web->makeUrlAbsolute(null));
     }
@@ -24,7 +24,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      */
     public function validateUriTest()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // We use any URL for this.
         $web->go('https://test-pages.phpscraper.de/content/lists.html');
@@ -53,7 +53,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      */
     public function testCurrentBaseHostWithBase()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         // Contains: <base href="https://test-pages-with-base-href.phpscraper.de/">
@@ -73,7 +73,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      */
     public function testMakeUrlAbsolute()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to test page: This sets the base URL.
         $web->go('https://phpscraper.de');
@@ -117,7 +117,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      */
     public function testMakeUrlAbsoluteConsiderBaseHref()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         /**
          * Navigate to test page: This sets the base URL.
@@ -173,7 +173,7 @@ class UrlTest extends \PHPUnit\Framework\TestCase
      */
     public function testMakeUrlAbsoluteWithBaseHost()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to test page: This sets the base URL.
         $web->go('https://phpscraper.de');

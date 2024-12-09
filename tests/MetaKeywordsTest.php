@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testMissingKeywords()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Go to the test page
         $web->go('https://test-pages.phpscraper.de/meta/missing.html');
@@ -27,7 +27,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testNoSpaces()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/keywords/parse-no-spaces.html');
@@ -42,7 +42,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testSpaces()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/keywords/parse-spaces.html');
@@ -57,7 +57,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testIrregularSpaces()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/keywords/parse-irregular-spaces.html');
@@ -72,7 +72,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testWithHTMLEntity()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/html-entities.html');
@@ -86,7 +86,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testLoremIpsum()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');
@@ -100,7 +100,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testGermanUmlaute()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/german-umlaute.html');
@@ -114,7 +114,7 @@ class MetaKeywordsTest extends \PHPUnit\Framework\TestCase
      */
     public function testChineseCharacters()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/chinese-characters.html');

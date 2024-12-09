@@ -1,8 +1,8 @@
 <?php
 
-namespace Spekulatius\PHPScraper;
+namespace Fastwhale\PHPScraper;
 
-use Spekulatius\PHPScraper\DataTransferObjects\FeedEntry;
+use Fastwhale\PHPScraper\DataTransferObjects\FeedEntry;
 
 trait UsesFeeds
 {
@@ -65,7 +65,7 @@ trait UsesFeeds
     }
 
     /**
-     * Resolves the search index and returns an array of `\Spekulatius\PHPScraper\DataTransferObjects\FeedEntry`.
+     * Resolves the search index and returns an array of `\Fastwhale\PHPScraper\DataTransferObjects\FeedEntry`.
      *
      * @return array<FeedEntry> $searchIndex
      */

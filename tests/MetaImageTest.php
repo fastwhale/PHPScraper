@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class MetaImageTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class MetaImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testCallMethodsAreEqual()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Attempt to my blog
         $web->go('https://peterthaleikis.com');
@@ -23,7 +23,7 @@ class MetaImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testMissingImage()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/missing.html');
@@ -37,7 +37,7 @@ class MetaImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testAbsolutePath()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/image/absolute-path.html');
@@ -51,7 +51,7 @@ class MetaImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testRelativePath()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/image/relative-path.html');
@@ -68,7 +68,7 @@ class MetaImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testAbsolutePathWithBaseHref()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/image/absolute-path-with-base-href.html');
@@ -85,7 +85,7 @@ class MetaImageTest extends \PHPUnit\Framework\TestCase
      */
     public function testRelativePathBaseHref()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/image/relative-path-with-base-href.html');

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class CoreTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class CoreTest extends \PHPUnit\Framework\TestCase
      */
     public function testMethodAndPropertyCallsAreEqual()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to test page
         $web->go('https://phpscraper.de');
@@ -25,7 +25,7 @@ class CoreTest extends \PHPUnit\Framework\TestCase
      */
     public function testChangeOfCurrentPage()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // 1. Navigate to test page
         $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');
@@ -71,7 +71,7 @@ class CoreTest extends \PHPUnit\Framework\TestCase
         $url = 'https://test-pages.phpscraper.de/meta/html-entities.html';
 
         // Test 1: Create, navigate to the test page.
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
         $web->go($url);
 
         // Check the h1
@@ -85,7 +85,7 @@ class CoreTest extends \PHPUnit\Framework\TestCase
             'We are testing here & elsewhere!',
 
             // Chained
-            (new \Spekulatius\PHPScraper\PHPScraper)
+            (new \Fastwhale\PHPScraper\PHPScraper)
                 ->go($url)
                 ->h1[0]
         );

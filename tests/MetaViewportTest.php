@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class MetaViewportTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class MetaViewportTest extends \PHPUnit\Framework\TestCase
      */
     public function testMissingViewport()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Go to the test page
         $web->go('https://test-pages.phpscraper.de/meta/missing.html');
@@ -27,7 +27,7 @@ class MetaViewportTest extends \PHPUnit\Framework\TestCase
      */
     public function testWithViewport()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/lorem-ipsum.html');

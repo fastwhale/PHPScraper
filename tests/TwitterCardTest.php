@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 class TwitterCardTest extends \PHPUnit\Framework\TestCase
 {
@@ -9,7 +9,7 @@ class TwitterCardTest extends \PHPUnit\Framework\TestCase
      */
     public function testMissingTwitterCard()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Go to the test page
         $web->go('https://test-pages.phpscraper.de/meta/missing.html');
@@ -24,7 +24,7 @@ class TwitterCardTest extends \PHPUnit\Framework\TestCase
      */
     public function testTwitterCard()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/twittercard/example.html');

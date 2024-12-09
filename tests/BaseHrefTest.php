@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 /**
  * This tests only the `<base href="...">`-extraction.
@@ -14,7 +14,7 @@ class BaseHrefTest extends \PHPUnit\Framework\TestCase
      */
     public function testMissingBaseHref()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/meta/missing.html');
@@ -28,7 +28,7 @@ class BaseHrefTest extends \PHPUnit\Framework\TestCase
      */
     public function testBaseHref()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         // Contains: <base href="https://test-pages-with-base-href.phpscraper.de/">

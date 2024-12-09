@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper;
+namespace Fastwhale\PHPScraper;
 
 /**
  * This class organizes mostly. For individual functionality check the related traits please.

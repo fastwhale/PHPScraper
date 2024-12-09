@@ -1,6 +1,6 @@
 <?php
 
-namespace Spekulatius\PHPScraper\Tests;
+namespace Fastwhale\PHPScraper\Tests;
 
 use PHPUnit\Framework\TestCase;
 
@@ -11,7 +11,7 @@ class NotFoundTest extends TestCase
      */
     public function testPageMissing()
     {
-        $web = new \Spekulatius\PHPScraper\PHPScraper;
+        $web = new \Fastwhale\PHPScraper\PHPScraper;
 
         // Navigate to the test page.
         $web->go('https://test-pages.phpscraper.de/page-does-not-exist.html');
