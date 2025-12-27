@@ -3,7 +3,7 @@
 namespace Fastwhale\PHPScraper;
 
 use Symfony\Component\BrowserKit\HttpBrowser;
-use Symfony\Component\DomCrawler\Crawler;
+use Fastwhale\Component\DomCrawler\Crawler;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 trait UsesBrowserKit
@@ -25,7 +25,7 @@ trait UsesBrowserKit
     /**
      * Holds the current page (a Crawler object)
      *
-     * @var \Symfony\Component\DomCrawler\Crawler
+     * @var \Fastwhale\Component\DomCrawler\Crawler
      */
     protected $currentPage;
 

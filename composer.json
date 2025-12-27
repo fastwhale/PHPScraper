@@ -17,12 +17,17 @@
         {
             "name": "Peter Thaleikis",
             "homepage": "https://peterthaleikis.com"
+        },
+        {
+            "name": "Fastwhale",
+            "homepage": "https://www.kuaijing.cn",
+            "email": "op@mail.pigcms.com"
         }
     ],
     "require": {
         "php": "^8.1",
         "ext-intl": "*",
-        "symfony/dom-crawler": "^5.4 || ^6.0 || ^7.0",
+        "fastwhale/dom-crawler": "^7.3",
         "donatello-za/rake-php-plus": "^1.0.15",
         "league/uri": "^7.0",
         "symfony/browser-kit": "^6.0 || ^7.0",

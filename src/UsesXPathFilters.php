@@ -2,7 +2,7 @@
 
 namespace Fastwhale\PHPScraper;
 
-use Symfony\Component\DomCrawler\Crawler;
+use Fastwhale\Component\DomCrawler\Crawler;
 
 trait UsesXPathFilters
 {

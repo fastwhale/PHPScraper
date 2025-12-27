@@ -4,8 +4,8 @@ namespace Fastwhale\PHPScraper;
 
 use DonatelloZa\RakePlus\RakePlus;
 use League\Uri\Uri;
-use Symfony\Component\DomCrawler\Image as DomCrawlerImage;
-use Symfony\Component\DomCrawler\Link as DomCrawlerLink;
+use Fastwhale\Component\DomCrawler\Image as DomCrawlerImage;
+use Fastwhale\Component\DomCrawler\Link as DomCrawlerLink;
 
 trait UsesContent
 {
@@ -528,7 +528,7 @@ trait UsesContent
 
         $images = $this->filter('//img')->images();
 
-        /** @var \Symfony\Component\DomCrawler\Image $image */
+        /** @var \Fastwhale\Component\DomCrawler\Image $image */
 	    foreach ($images as $image) {
          $node = $image->getNode();
          if ($node) {
