@@ -30,7 +30,7 @@
         "fastwhale/dom-crawler": "^7.0",
         "donatello-za/rake-php-plus": "^1.0.15",
         "league/uri": "^7.0",
-        "symfony/browser-kit": "^6.0 || ^7.0",
+        "fastwhale/browser-kit": "^7.0",
         "symfony/http-client": "^6.0 || ^7.0",
         "symfony/css-selector": "^6.0 || ^7.0"
     },

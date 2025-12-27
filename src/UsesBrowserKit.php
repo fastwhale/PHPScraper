@@ -2,7 +2,7 @@
 
 namespace Fastwhale\PHPScraper;
 
-use Symfony\Component\BrowserKit\HttpBrowser;
+use Fastwhale\Component\BrowserKit\HttpBrowser;
 use Fastwhale\Component\DomCrawler\Crawler;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
@@ -11,7 +11,7 @@ trait UsesBrowserKit
     /**
      * Holds the client
      *
-     * @var \Symfony\Component\BrowserKit\HttpBrowser
+     * @var \Fastwhale\Component\BrowserKit\HttpBrowser
      */
     protected $client;
 
@@ -52,7 +52,7 @@ trait UsesBrowserKit
     /**
      * Retrieve the client
      *
-     * @return \Symfony\Component\BrowserKit\HttpBrowser $client
+     * @return \Fastwhale\Component\BrowserKit\HttpBrowser $client
      */
     public function client(): HttpBrowser
     {

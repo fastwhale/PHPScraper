@@ -8,7 +8,7 @@ namespace Fastwhale\PHPScraper;
  * Most calls are passed through to the Core class.
  */
 
-use Symfony\Component\BrowserKit\HttpBrowser;
+use Fastwhale\Component\BrowserKit\HttpBrowser;
 use Symfony\Component\HttpClient\HttpClient as SymfonyHttpClient;
 
 /**
